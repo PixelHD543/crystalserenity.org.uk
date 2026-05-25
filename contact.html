@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #2c3e2f;
-            background-color: #fef9f0;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
         }
 
         .container {
@@ -25,12 +25,12 @@
         }
 
         header {
-            background: linear-gradient(135deg, #e8dccc, #d4c4a8);
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .header-flex {
@@ -42,13 +42,13 @@
 
         .logo h1 {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
 
         .logo p {
             font-style: italic;
-            color: #6b4c3b;
+            color: #5a7a5a;
         }
 
         nav ul {
@@ -60,17 +60,17 @@
 
         nav a {
             text-decoration: none;
-            color: #3a2a27;
+            color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #b8860b;
+            color: #7cb342;
         }
 
         .page-hero {
-            background: linear-gradient(135deg, #a69062, #8f7a51);
+            background: linear-gradient(135deg, #a8c4a8, #98b498);
             padding: 60px 0;
             text-align: center;
             color: white;
@@ -92,13 +92,13 @@
             background: white;
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .info-card h2 {
-            color: #b8860b;
+            color: #7cb342;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e8dccc;
+            border-bottom: 2px solid #dcedbc;
             padding-bottom: 10px;
         }
 
@@ -110,31 +110,57 @@
             display: flex;
             justify-content: space-between;
             padding: 8px 0;
-            border-bottom: 1px solid #e0d6c0;
+            border-bottom: 1px solid #c8e0c8;
         }
 
         .qual-badge {
             display: inline-block;
-            background: #e8dccc;
+            background: #dcedbc;
             padding: 5px 12px;
             border-radius: 20px;
             margin: 5px;
             font-size: 0.85rem;
+            color: #3a6b3a;
         }
 
         .cancellation {
-            background: #f0e6d0;
+            background: #e8f0e0;
             padding: 20px;
-            border-left: 5px solid #b8860b;
+            border-left: 5px solid #7cb342;
             margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            padding: 30px 0;
+            color: #5a7a5a;
         }
 
         footer {
-            background: #2c3e2f;
-            color: #f0e6d0;
+            background: #2d4a2d;
+            color: #e8f0e0;
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #558b2f;
         }
 
         @media (max-width: 768px) {
@@ -151,7 +177,9 @@
     <div class="container header-flex">
         <div class="logo">
             <h1>Crystal Serenity</h1>
-            <p>School of Golden Light</p>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
         </div>
         <nav>
             <ul>
@@ -167,8 +195,8 @@
 
 <div class="page-hero">
     <div class="container">
-        <h1>About & Contact</h1>
-        <p>Meet Cathy — Your Trusted Healer & Teacher</p>
+        <h1>About and Contact</h1>
+        <p>Meet Cathy — Your Trusted Healer and Teacher</p>
     </div>
 </div>
 
@@ -176,17 +204,17 @@
     <div class="contact-grid">
         <!-- Contact Info -->
         <div class="info-card">
-            <h2>📞 Get in Touch</h2>
+            <h2>Get in Touch</h2>
             <p><strong>Phone:</strong> 07765 065 466</p>
             <p><strong>Email:</strong> cathy@crystalserenity.org.uk</p>
             <p><strong>Location:</strong> Shelf, Halifax (full address given upon booking)</p>
             <p><strong>Travel:</strong> Home visits available within 8 miles (travel expenses apply beyond)</p>
-            <a href="mailto:cathy@crystalserenity.org.uk" class="btn" style="display: inline-block; background:#b8860b; color:white; padding:10px 20px; border-radius:40px; text-decoration:none; margin-top:15px;">Email Now →</a>
+            <a href="mailto:cathy@crystalserenity.org.uk" class="btn">Email Now</a>
         </div>
 
         <!-- Opening Hours -->
         <div class="info-card">
-            <h2>🕐 Opening Hours</h2>
+            <h2>Opening Hours</h2>
             <ul class="hours-list">
                 <li><span>Monday</span><span>10am - 6pm</span></li>
                 <li><span>Tuesday</span><span>10am - 6pm</span></li>
@@ -202,7 +230,7 @@
 
     <!-- About Cathy -->
     <div class="info-card" style="margin-bottom: 30px;">
-        <h2>🌟 About Cathy</h2>
+        <h2>About Cathy</h2>
         <p>With over 18 years of experience, Cathy is a passionate, qualified therapist dedicated to high standards. She provides one-to-one, bespoke treatments in a beautiful purpose-built therapy room.</p>
         <div style="margin-top: 20px;">
             <span class="qual-badge">Member - Angelic Reiki Association</span>
@@ -210,30 +238,32 @@
             <span class="qual-badge">BCMA Registered</span>
             <span class="qual-badge">NCP Accredited</span>
             <span class="qual-badge">Guild of Holistic Therapists</span>
+            <span class="qual-badge">Guild of Beauty Therapists</span>
             <span class="qual-badge">INLPTA NLP - 18+ years</span>
             <span class="qual-badge">Certified Munay-Ki Mentor</span>
-            <span class="qual-badge">Qualified in Anatomy & Physiology</span>
+            <span class="qual-badge">Qualified in Anatomy and Physiology</span>
             <span class="qual-badge">Certificate in Training Practice (CITP)</span>
             <span class="qual-badge">DBS Checked</span>
         </div>
-        <p style="margin-top: 20px;">Cathy has delivered meditation in care homes, GP practices, and for Cancer Support Yorkshire. She has been providing card readings since the 1970s.</p>
+        <p style="margin-top: 20px;">Cathy has delivered meditation in care homes, GP practices, sheltered housing, church recreation areas, and for Cancer Support Yorkshire. She has been providing card readings since the 1970s.</p>
+        <p style="margin-top: 10px;">Cathy is also a member of the National Council of Psychotherapists (NCP) and delivers training with over 18 years experience in corporate environments and at Crystal Serenity Academy.</p>
     </div>
 
     <!-- Free Consultation -->
-    <div style="background: #e8dccc; padding: 30px; border-radius: 20px; text-align: center; margin: 30px 0;">
-        <h3>🎁 Free Consultations with Therapies</h3>
+    <div style="background: linear-gradient(135deg, #dcedbc, #e8f0e0); padding: 30px; border-radius: 20px; text-align: center; margin: 30px 0;">
+        <h3>Free Consultations with Therapies</h3>
         <p>No obligation — just a gentle chat to see how Cathy can help you.</p>
-        <a href="tel:07765065466" class="btn" style="display: inline-block; background:#b8860b; color:white; padding:10px 30px; border-radius:40px; text-decoration:none; margin-top:15px;">Call for Free Consultation →</a>
+        <a href="tel:07765065466" class="btn">Call for Free Consultation</a>
     </div>
 
     <!-- Cancellation Policy -->
     <div class="cancellation">
-        <h3>📋 Cancellation Policy</h3>
+        <h3>Cancellation Policy</h3>
         <p>In the event you need to cancel an appointment, please do so at least 24 hours prior to your appointment or you will be charged the usual treatment fee.</p>
     </div>
 
     <!-- Quote -->
-    <div style="text-align: center; font-style: italic; padding: 30px 0;">
+    <div class="quote">
         <p>"Perceive the beauty in any situation and find the gift from spirit"</p>
         <p>— Alberto Villoldo, Ph.D.</p>
     </div>
@@ -243,13 +273,9 @@
     <div class="container">
         <p>© 2013-2026 Crystal Serenity | Divine Angelic Blessings to Everyone</p>
         <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+        <p>Health and Safety | DBS Checked</p>
     </div>
 </footer>
 
-<style>
-    .btn:hover {
-        background: #8b6508 !important;
-    }
-</style>
 </body>
 </html>
