@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #2c3e2f;
-            background-color: #fef9f0;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
         }
 
         .container {
@@ -24,14 +24,13 @@
             padding: 0 20px;
         }
 
-        /* Header */
         header {
-            background: linear-gradient(135deg, #e8dccc, #d4c4a8);
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .header-flex {
@@ -43,13 +42,13 @@
 
         .logo h1 {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
 
         .logo p {
             font-style: italic;
-            color: #6b4c3b;
+            color: #5a7a5a;
         }
 
         nav ul {
@@ -61,24 +60,21 @@
 
         nav a {
             text-decoration: none;
-            color: #3a2a27;
+            color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #b8860b;
+            color: #7cb342;
         }
 
-        /* Hero */
+        /* Hero section with image background */
         .hero {
             background-image: url('images/hero-filler.jpg');
             background-size: cover;
             background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 80px 20px;
             text-align: center;
             color: white;
             position: relative;
@@ -91,23 +87,31 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.4);
+            background: rgba(45, 74, 45, 0.5);
         }
 
         .hero-text {
             position: relative;
             z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .hero h2 {
-            font-size: 3rem;
+            font-size: 2.2rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
         }
 
         .btn {
             display: inline-block;
-            background: #b8860b;
+            background: #7cb342;
             color: white;
             padding: 12px 30px;
             border-radius: 40px;
@@ -119,20 +123,19 @@
         }
 
         .btn:hover {
-            background: #8b6508;
+            background: #558b2f;
         }
 
-        /* Sections */
         section {
             padding: 60px 0;
-            border-bottom: 1px solid #e0d6c0;
+            border-bottom: 1px solid #c8e0c8;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-bottom: 40px;
-            color: #4a2e2a;
+            color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
 
@@ -147,7 +150,7 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s;
             text-align: center;
         }
@@ -159,34 +162,31 @@
         .card-img {
             width: 100%;
             height: 200px;
-            background-color: #e9e0d0;
+            background-color: #dcedbc;
             background-size: cover;
             background-position: center;
         }
 
         .card h3 {
             margin: 20px 0 10px;
-            color: #b8860b;
+            color: #7cb342;
         }
 
         .card p {
             padding: 0 20px 20px;
+            color: #4a6a4a;
         }
 
-        .list-columns {
-            columns: 2;
-            column-gap: 40px;
-            list-style-position: inside;
-            margin: 20px 0;
-        }
-
-        .list-columns li {
-            margin-bottom: 10px;
+        .offer-box {
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
         }
 
         footer {
-            background: #2c3e2f;
-            color: #f0e6d0;
+            background: #2d4a2d;
+            color: #e8f0e0;
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
@@ -197,11 +197,8 @@
                 flex-direction: column;
                 gap: 15px;
             }
-            .list-columns {
-                columns: 1;
-            }
             .hero h2 {
-                font-size: 2rem;
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -226,24 +223,25 @@
     </div>
 </header>
 
+<!-- Hero section with your new welcome text -->
 <div class="hero">
     <div class="hero-text">
-        <h2>Find Your Bliss and Serenity</h2>
-        <p style="font-size: 1.2rem;">Discover The Landscape of Your Soul</p>
+        <h2>A Warm Welcome</h2>
+        <p>Crystal Serenity offers holistic healing & celestial training for those seeking a positive and natural change for the Mind, Body, Soul & Spiritual development.</p>
         <a href="contact.html" class="btn">Free Consultation →</a>
     </div>
 </div>
 
 <main class="container">
-    <!-- Welcome Section -->
+    <!-- Welcome Message (keeping original heart) -->
     <section>
-        <h2 class="section-title">A Warm Welcome</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Crystal Serenity offers holistic healing & celestial training for those seeking positive, natural change on a Body, Mind, Soul & Spiritual level.</p>
+        <h2 class="section-title">Find Your Bliss and Serenity</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; color: #4a6a4a;">Discover The Landscape of Your Soul. A warm welcome fellow travellers — Crystal Serenity offers Training and holistic healing for individuals seeking positive, natural change.</p>
         <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-            <span style="background:#e8dccc; padding:8px 18px; border-radius:30px;">✨ Angelic Reiki</span>
-            <span style="background:#e8dccc; padding:8px 18px; border-radius:30px;">💎 Crystal Healing</span>
-            <span style="background:#e8dccc; padding:8px 18px; border-radius:30px;">🌿 Soul Midwifery</span>
-            <span style="background:#e8dccc; padding:8px 18px; border-radius:30px;">📜 Cartouche</span>
+            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">✨ Angelic Reiki</span>
+            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">💎 Crystal Healing</span>
+            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">🌿 Soul Midwifery</span>
+            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">📜 Cartouche</span>
         </div>
     </section>
 
@@ -254,28 +252,29 @@
             <div class="card">
                 <div class="card-img" style="background-image: url('images/therapy-filler.jpg');"></div>
                 <h3>Healing Therapies</h3>
-                <p>Angelic Reiki, Crystal Therapy, Atlantean Healing, Axiatonal Alignment & more.</p>
+                <p>Angelic Reiki, Crystal Therapy, Atlantean Healing, Axiatonal Alignment, Cartouche & more.</p>
             </div>
             <div class="card">
                 <div class="card-img" style="background-image: url('images/training-filler.jpg');"></div>
                 <h3>Training & Workshops</h3>
-                <p>Become a Practitioner or Teacher. Angelic Reiki, Metatron Method, Munay-Ki.</p>
+                <p>Become a Practitioner or Teacher. Angelic Reiki, Metatron Method, Munay-Ki, Meditation.</p>
             </div>
             <div class="card">
                 <div class="card-img" style="background-image: url('images/readings-filler.jpg');"></div>
                 <h3>Card Readings</h3>
-                <p>Angel, Crystal, Dragon & Cartouche readings. 30 mins £40 / 60 mins £50.</p>
+                <p>Angel, Crystal, Dragon, Power Animal & Cartouche readings. 30 mins £40 / 60 mins £50.</p>
             </div>
         </div>
     </section>
 
-    <!-- Offers & Contact Blurb -->
+    <!-- Offers -->
     <section>
         <h2 class="section-title">Current Offers</h2>
-        <div style="background: #e8dccc; padding: 30px; border-radius: 20px; text-align: center;">
+        <div class="offer-box">
             <p>📞 <strong>Ring 07765 065 466</strong> for a free, no-obligation consultation</p>
             <p>📍 Beautiful therapy room in Shelf, Halifax</p>
             <p>🎁 Concessions available for carers, pensioners, low income & regular treatments</p>
+            <p>🎟️ Gift Vouchers available for special occasions</p>
             <a href="contact.html" class="btn" style="margin-top: 15px;">View Full Details →</a>
         </div>
     </section>
