@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #2c3e2f;
-            background-color: #fef9f0;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
         }
 
         .container {
@@ -25,12 +25,12 @@
         }
 
         header {
-            background: linear-gradient(135deg, #e8dccc, #d4c4a8);
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .header-flex {
@@ -42,13 +42,13 @@
 
         .logo h1 {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
 
         .logo p {
             font-style: italic;
-            color: #6b4c3b;
+            color: #5a7a5a;
         }
 
         nav ul {
@@ -60,20 +60,20 @@
 
         nav a {
             text-decoration: none;
-            color: #3a2a27;
+            color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #b8860b;
+            color: #7cb342;
         }
 
         .page-hero {
-            background: linear-gradient(135deg, #d4c4a8, #c9b896);
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
             padding: 60px 0;
             text-align: center;
-            color: #2c3e2f;
+            color: #2d4a2d;
         }
 
         .page-hero h1 {
@@ -83,15 +83,15 @@
 
         section {
             padding: 50px 0;
-            border-bottom: 1px solid #e0d6c0;
+            border-bottom: 1px solid #c8e0c8;
         }
 
         .section-title {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             margin-bottom: 30px;
             font-family: 'Georgia', serif;
-            border-left: 5px solid #b8860b;
+            border-left: 5px solid #7cb342;
             padding-left: 20px;
         }
 
@@ -105,18 +105,23 @@
             background: white;
             border-radius: 15px;
             padding: 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
 
         .service-card h3 {
-            color: #b8860b;
+            color: #7cb342;
             margin-bottom: 15px;
             font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #4a6a4a;
         }
 
         .service-card ul {
             list-style-position: inside;
             margin-top: 10px;
+            color: #4a6a4a;
         }
 
         .service-card li {
@@ -125,19 +130,44 @@
 
         .badge {
             display: inline-block;
-            background: #e8dccc;
+            background: #dcedbc;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 0.8rem;
             margin-top: 10px;
+            color: #3a6b3a;
+        }
+
+        .offer-box {
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
         }
 
         footer {
-            background: #2c3e2f;
-            color: #f0e6d0;
+            background: #2d4a2d;
+            color: #e8f0e0;
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #558b2f;
         }
 
         @media (max-width: 768px) {
@@ -154,7 +184,9 @@
     <div class="container header-flex">
         <div class="logo">
             <h1>Crystal Serenity</h1>
-            <p>School of Golden Light</p>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
         </div>
         <nav>
             <ul>
@@ -171,14 +203,14 @@
 <div class="page-hero">
     <div class="container">
         <h1>Healing Therapies</h1>
-        <p>Natural, non-invasive healing for Body, Mind, Soul & Spirit</p>
+        <p>Natural, non-invasive healing for Body, Mind, Soul and Spirit</p>
     </div>
 </div>
 
 <main class="container">
     <!-- Angelic & Celestial Therapies -->
     <section>
-        <h2 class="section-title">✨ Angelic & Celestial Therapies</h2>
+        <h2 class="section-title">Angelic & Celestial Therapies</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Angelic Reiki</h3>
@@ -190,7 +222,7 @@
                 <p>Combines angelic energy with the power of crystals.</p>
             </div>
             <div class="service-card">
-                <h3>Atlantean Soul Retrieval & Soul Healing</h3>
+                <h3>Atlantean Soul Retrieval and Soul Healing</h3>
                 <p>Ancient Atlantean techniques to restore lost soul fragments.</p>
             </div>
             <div class="service-card">
@@ -214,7 +246,7 @@
 
     <!-- Crystal Therapies -->
     <section>
-        <h2 class="section-title">💎 Crystal Therapies</h2>
+        <h2 class="section-title">Crystal Therapies</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Crystal Healing</h3>
@@ -229,7 +261,7 @@
                 <p>Reflexology enhanced with crystal energies.</p>
             </div>
             <div class="service-card">
-                <h3>Chakra Balancing & Auric Cleanse</h3>
+                <h3>Chakra Balancing and Auric Cleanse</h3>
                 <p>Realign your energy centres and clear your aura.</p>
             </div>
             <div class="service-card">
@@ -239,28 +271,32 @@
         </div>
     </section>
 
-    <!-- Egyptian & Cartouche -->
+    <!-- Egyptian & Cartouche - UPDATED DESCRIPTION -->
     <section>
-        <h2 class="section-title">📜 Egyptian & Cartouche Healing</h2>
+        <h2 class="section-title">Egyptian and Cartouche Healing</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Cartouche Ancient Egyptian Healing</h3>
-                <p>Powerful healing from Egyptian mystery schools.</p>
+                <p>Cartouche is known as an "Oracle of Ancient Egyptian Magic".</p>
             </div>
             <div class="service-card">
                 <h3>Cartouche Meditations</h3>
                 <p>Guided meditations with Egyptian symbols.</p>
             </div>
+            <div class="service-card">
+                <h3>Element and Elemental Healing</h3>
+                <p>Working with the elemental kingdoms for balance and harmony.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Access Consciousness -->
+    <!-- Access Consciousness - UPDATED ACCESS FACELIFT DESCRIPTION -->
     <section>
-        <h2 class="section-title">🌀 Access Consciousness</h2>
+        <h2 class="section-title">Access Consciousness</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Access Facelift</h3>
-                <p>Gentle, non-surgical energy lift for face and neck.</p>
+                <p>This treatment is not a facial, no products are used in the treatment.</p>
             </div>
             <div class="service-card">
                 <h3>The Bars Healing</h3>
@@ -275,7 +311,7 @@
 
     <!-- NLP & Life Coaching -->
     <section>
-        <h2 class="section-title">🧠 NLP & Life Coaching</h2>
+        <h2 class="section-title">NLP and Life Coaching</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Life Coaching</h3>
@@ -294,7 +330,7 @@
 
     <!-- Kinesiology & Massage -->
     <section>
-        <h2 class="section-title">💆 Holistic Bodywork</h2>
+        <h2 class="section-title">Holistic Bodywork</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Educational Kinesiology</h3>
@@ -309,19 +345,42 @@
                 <p>Deep relaxation for head, neck, and shoulders.</p>
             </div>
             <div class="service-card">
-                <h3>Thai Foot & Hand Massage</h3>
+                <h3>Thai Foot and Hand Massage</h3>
                 <p>Stimulating massage using acupressure points.</p>
+            </div>
+            <div class="service-card">
+                <h3>Holistic Facial Treatments</h3>
+                <p>Luxury facial with beautiful products to suit your skin type.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Therapies from Original Site -->
+    <section>
+        <h2 class="section-title">Additional Healing Modalities</h2>
+        <div class="grid-2">
+            <div class="service-card">
+                <h3>Past Life Regression Therapy</h3>
+                <p>Using hypnotherapy techniques.</p>
+            </div>
+            <div class="service-card">
+                <h3>Animal Healing</h3>
+                <p>Healing for animals with Reiki and crystals. Distant healing also available.</p>
+            </div>
+            <div class="service-card">
+                <h3>Distant Healing</h3>
+                <p>Healing sent remotely, including for animals.</p>
             </div>
         </div>
     </section>
 
     <!-- Special Offer -->
     <section>
-        <div style="background: #e8dccc; padding: 30px; border-radius: 20px; text-align: center;">
-            <h3>❤️ Bespoke Treatments Available</h3>
+        <div class="offer-box">
+            <h3>Bespoke Treatments Available</h3>
             <p>If you are a cancer patient or carer experiencing exhaustion, a tailored treatment can be arranged.</p>
             <p>Suffering from chronic illness, depression, or going through an operation? We are here to help.</p>
-            <a href="contact.html" class="btn" style="display: inline-block; background:#b8860b; color:white; padding:10px 25px; border-radius:40px; text-decoration:none; margin-top:15px;">Book a Free Consultation →</a>
+            <a href="contact.html" class="btn">Book a Free Consultation</a>
         </div>
     </section>
 </main>
@@ -333,10 +392,5 @@
     </div>
 </footer>
 
-<style>
-    .btn:hover {
-        background: #8b6508 !important;
-    }
-</style>
 </body>
 </html>
