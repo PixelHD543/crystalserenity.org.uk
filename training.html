@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #2c3e2f;
-            background-color: #fef9f0;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
         }
 
         .container {
@@ -25,12 +25,12 @@
         }
 
         header {
-            background: linear-gradient(135deg, #e8dccc, #d4c4a8);
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
             padding: 20px 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         .header-flex {
@@ -42,13 +42,13 @@
 
         .logo h1 {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
 
         .logo p {
             font-style: italic;
-            color: #6b4c3b;
+            color: #5a7a5a;
         }
 
         nav ul {
@@ -60,20 +60,20 @@
 
         nav a {
             text-decoration: none;
-            color: #3a2a27;
+            color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #b8860b;
+            color: #7cb342;
         }
 
         .page-hero {
-            background: linear-gradient(135deg, #c9b896, #b8a47a);
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
             padding: 60px 0;
             text-align: center;
-            color: white;
+            color: #2d4a2d;
         }
 
         .page-hero h1 {
@@ -83,15 +83,15 @@
 
         section {
             padding: 50px 0;
-            border-bottom: 1px solid #e0d6c0;
+            border-bottom: 1px solid #c8e0c8;
         }
 
         .section-title {
             font-size: 1.8rem;
-            color: #4a2e2a;
+            color: #3a6b3a;
             margin-bottom: 30px;
             font-family: 'Georgia', serif;
-            border-left: 5px solid #b8860b;
+            border-left: 5px solid #7cb342;
             padding-left: 20px;
         }
 
@@ -105,7 +105,7 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
             transition: transform 0.3s;
         }
 
@@ -115,22 +115,23 @@
 
         .course-img {
             height: 180px;
-            background-color: #d4c4a8;
+            background-color: #dcedbc;
             background-size: cover;
             background-position: center;
         }
 
         .course-card h3 {
-            color: #b8860b;
+            color: #7cb342;
             margin: 20px 20px 10px;
         }
 
         .course-card p {
             margin: 0 20px 20px;
+            color: #4a6a4a;
         }
 
         .meditation-box {
-            background: linear-gradient(135deg, #e8dccc, #d4c4a8);
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
             padding: 30px;
             border-radius: 20px;
             text-align: center;
@@ -138,11 +139,28 @@
         }
 
         footer {
-            background: #2c3e2f;
-            color: #f0e6d0;
+            background: #2d4a2d;
+            color: #e8f0e0;
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #558b2f;
         }
 
         @media (max-width: 768px) {
@@ -159,7 +177,9 @@
     <div class="container header-flex">
         <div class="logo">
             <h1>Crystal Serenity</h1>
-            <p>School of Golden Light</p>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
         </div>
         <nav>
             <ul>
@@ -181,14 +201,14 @@
 </div>
 
 <main class="container">
-    <!-- Angelic Reiki Training -->
+    <!-- Angelic Reiki Training (includes all advanced training) -->
     <section>
-        <h2 class="section-title">👼 Angelic Reiki Training</h2>
+        <h2 class="section-title">Angelic Reiki Training</h2>
         <div class="training-grid">
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/angelic-training-filler.jpg');"></div>
                 <h3>Angelic Reiki Practitioner</h3>
-                <p>Become a certified Angelic Reiki Practitioner. New dates available — see page or call.</p>
+                <p>Become a certified Angelic Reiki Practitioner. New dates available — contact for details.</p>
             </div>
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/master-teacher-filler.jpg');"></div>
@@ -198,15 +218,8 @@
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/monthly-share-filler.jpg');"></div>
                 <h3>Monthly Angelic Reiki Share</h3>
-                <p>Development & Meditation — Saturday mornings 10:30 - 13:00</p>
+                <p>Development and Meditation — Saturday mornings 10:30 - 13:00</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Metatron & Soul Midwifery -->
-    <section>
-        <h2 class="section-title">🔮 Advanced Spiritual Training</h2>
-        <div class="training-grid">
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/metatron-filler.jpg');"></div>
                 <h3>Metatron Method Training</h3>
@@ -222,7 +235,7 @@
 
     <!-- Crystal Workshops -->
     <section>
-        <h2 class="section-title">💎 Crystal Healing Workshops</h2>
+        <h2 class="section-title">Crystal Healing Workshops</h2>
         <div class="training-grid">
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/crystal-workshop-filler.jpg');"></div>
@@ -239,7 +252,7 @@
 
     <!-- Munay-Ki -->
     <section>
-        <h2 class="section-title">🌿 Munay-Ki Training</h2>
+        <h2 class="section-title">Munay-Ki Training</h2>
         <div class="training-grid">
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/munay-ki-filler.jpg');"></div>
@@ -261,7 +274,7 @@
 
     <!-- Cartouche & Egyptian Astrology -->
     <section>
-        <h2 class="section-title">📜 Cartouche & Egyptian Astrology</h2>
+        <h2 class="section-title">Cartouche and Egyptian Astrology</h2>
         <div class="training-grid">
             <div class="course-card">
                 <div class="course-img" style="background-image: url('images/cartouche-training-filler.jpg');"></div>
@@ -276,19 +289,14 @@
         </div>
     </section>
 
-    <!-- Magical Thinking & Sirius -->
+    <!-- Magical Thinking & Sirius - MERGED (they are the same practice) -->
     <section>
-        <h2 class="section-title">⭐ Magical Thinking & Sirius</h2>
+        <h2 class="section-title">Magical Thinking and Exploring Sirius</h2>
         <div class="training-grid">
             <div class="course-card">
-                <div class="course-img" style="background-image: url('images/magical-thinking-filler.jpg');"></div>
-                <h3>Magical Thinking Workshop</h3>
-                <p>Explore the power of intention and manifestation.</p>
-            </div>
-            <div class="course-card">
-                <div class="course-img" style="background-image: url('images/sirius-filler.jpg');"></div>
-                <h3>Exploring Sirius Training</h3>
-                <p>Connect with the spiritual energies of Sirius.</p>
+                <div class="course-img" style="background-image: url('images/magical-sirius-filler.jpg');"></div>
+                <h3>Magical Thinking & Exploring Sirius</h3>
+                <p>Explore the power of intention and manifestation while connecting with the spiritual energies of Sirius.</p>
             </div>
         </div>
     </section>
@@ -296,10 +304,11 @@
     <!-- Meditation Classes -->
     <section>
         <div class="meditation-box">
-            <h3>🧘 Regular Day & Evening Meditation/Relaxation Classes</h3>
+            <h3>Meditation and Relaxation Classes</h3>
+            <p>Regular day and evening meditation and relaxation classes available.</p>
             <p>With over 15 years experience delivering meditation in care homes, GP practices, and online via YouTube.</p>
-            <p><strong>Also available for Cancer Support Yorkshire</strong></p>
-            <a href="contact.html" class="btn" style="display: inline-block; background:#b8860b; color:white; padding:10px 25px; border-radius:40px; text-decoration:none; margin-top:15px;">Enquire About Classes →</a>
+            <p>Also available for Cancer Support Yorkshire</p>
+            <a href="contact.html" class="btn">Enquire About Classes</a>
         </div>
     </section>
 </main>
@@ -311,10 +320,5 @@
     </div>
 </footer>
 
-<style>
-    .btn:hover {
-        background: #8b6508 !important;
-    }
-</style>
 </body>
 </html>
