@@ -106,6 +106,8 @@
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
         }
 
         .service-card h3 {
@@ -116,16 +118,27 @@
 
         .service-card p {
             color: #4a6a4a;
+            flex-grow: 1;
         }
 
-        .service-card ul {
-            list-style-position: inside;
-            margin-top: 10px;
-            color: #4a6a4a;
+        .btn-small {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            text-align: center;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            align-self: flex-start;
         }
 
-        .service-card li {
-            margin-bottom: 8px;
+        .btn-small:hover {
+            background: #558b2f;
         }
 
         .badge {
@@ -162,8 +175,6 @@
             text-decoration: none;
             margin-top: 15px;
             transition: background 0.3s;
-            border: none;
-            cursor: pointer;
         }
 
         .btn:hover {
@@ -210,36 +221,43 @@
 <main class="container">
     <!-- Angelic & Celestial Therapies -->
     <section>
-        <h2 class="section-title">Angelic & Celestial Therapies</h2>
+        <h2 class="section-title">Angelic and Celestial Therapies</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Angelic Reiki</h3>
                 <p>Divine healing energy working with angelic frequencies.</p>
                 <span class="badge">Member of Angelic Reiki Association</span>
+                <a href="details/angelic-reiki.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Angelic Crystal Reiki</h3>
                 <p>Combines angelic energy with the power of crystals.</p>
+                <a href="details/angelic-crystal-reiki.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Atlantean Soul Retrieval and Soul Healing</h3>
                 <p>Ancient Atlantean techniques to restore lost soul fragments.</p>
+                <a href="details/atlantean-soul-retrieval.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Atlantean Body Scan / Removal of Attachments</h3>
                 <p>Identify and clear energetic attachments.</p>
+                <a href="details/atlantean-body-scan.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Celestial Energy Healing</h3>
                 <p>High-frequency celestial light for deep transformation.</p>
+                <a href="details/celestial-energy-healing.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Axiatonal Alignment Therapy</h3>
                 <p>Activates your body's subtle energy pathways.</p>
+                <a href="details/axiatonal-alignment.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Mahatma Healing Therapy</h3>
                 <p>Advanced energy healing from the Mahatma energy.</p>
+                <a href="details/mahatma-healing.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
@@ -251,60 +269,71 @@
             <div class="service-card">
                 <h3>Crystal Healing</h3>
                 <p>Bespoke treatments using crystals to restore balance.</p>
+                <a href="details/crystal-healing.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Crystal Meridian Therapy</h3>
                 <p>Crystals applied to meridian points for energy flow.</p>
+                <a href="details/crystal-meridian.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Crystal Reflexology</h3>
                 <p>Reflexology enhanced with crystal energies.</p>
+                <a href="details/crystal-reflexology.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Chakra Balancing and Auric Cleanse</h3>
                 <p>Realign your energy centres and clear your aura.</p>
+                <a href="details/chakra-balancing.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Crystal Grids</h3>
                 <p>Manifesting, protection, and intention-setting grids.</p>
+                <a href="details/crystal-grids.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Egyptian & Cartouche - UPDATED DESCRIPTION -->
+    <!-- Egyptian & Cartouche -->
     <section>
         <h2 class="section-title">Egyptian and Cartouche Healing</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Cartouche Ancient Egyptian Healing</h3>
                 <p>Cartouche is known as an "Oracle of Ancient Egyptian Magic".</p>
+                <a href="details/cartouche-healing.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Cartouche Meditations</h3>
                 <p>Guided meditations with Egyptian symbols.</p>
+                <a href="details/cartouche-meditations.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Element and Elemental Healing</h3>
                 <p>Working with the elemental kingdoms for balance and harmony.</p>
+                <a href="details/elemental-healing.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Access Consciousness - UPDATED ACCESS FACELIFT DESCRIPTION -->
+    <!-- Access Consciousness -->
     <section>
         <h2 class="section-title">Access Consciousness</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Access Facelift</h3>
                 <p>This treatment is not a facial, no products are used in the treatment.</p>
+                <a href="details/access-facelift.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>The Bars Healing</h3>
                 <p>32 points on the head that hold thoughts and emotions.</p>
+                <a href="details/the-bars.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Body Healing Processes</h3>
                 <p>Deep cellular healing and release.</p>
+                <a href="details/body-healing-processes.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
@@ -316,14 +345,17 @@
             <div class="service-card">
                 <h3>Life Coaching</h3>
                 <p>Transform your life with professional coaching.</p>
+                <a href="details/life-coaching.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Mentoring</h3>
                 <p>Spiritual mentorship for your journey.</p>
+                <a href="details/mentoring.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Coaching with Spirit</h3>
                 <p>Blending spiritual guidance with practical coaching.</p>
+                <a href="details/coaching-with-spirit.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
@@ -335,41 +367,49 @@
             <div class="service-card">
                 <h3>Educational Kinesiology</h3>
                 <p>TFH Touch for Health | Brain Gym</p>
+                <a href="details/kinesiology.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Luxury Rose Quartz Facial</h3>
                 <p>With or without bespoke chakra balance.</p>
+                <a href="details/rose-quartz-facial.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Indian Head Massage</h3>
                 <p>Deep relaxation for head, neck, and shoulders.</p>
+                <a href="details/indian-head-massage.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Thai Foot and Hand Massage</h3>
                 <p>Stimulating massage using acupressure points.</p>
+                <a href="details/thai-foot-massage.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Holistic Facial Treatments</h3>
                 <p>Luxury facial with beautiful products to suit your skin type.</p>
+                <a href="details/holistic-facial.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Additional Therapies from Original Site -->
+    <!-- Additional Therapies -->
     <section>
         <h2 class="section-title">Additional Healing Modalities</h2>
         <div class="grid-2">
             <div class="service-card">
                 <h3>Past Life Regression Therapy</h3>
                 <p>Using hypnotherapy techniques.</p>
+                <a href="details/past-life-regression.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Animal Healing</h3>
                 <p>Healing for animals with Reiki and crystals. Distant healing also available.</p>
+                <a href="details/animal-healing.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Distant Healing</h3>
                 <p>Healing sent remotely, including for animals.</p>
+                <a href="details/distant-healing.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
