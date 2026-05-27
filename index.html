@@ -41,7 +41,7 @@
         }
 
         .logo h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
@@ -49,12 +49,13 @@
         .logo p {
             font-style: italic;
             color: #5a7a5a;
+            font-size: 0.9rem;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
@@ -63,17 +64,19 @@
             color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
             color: #7cb342;
         }
 
+        /* Hero - now only has the short phrase */
         .hero {
             background-image: url('images/hero-filler.jpg');
             background-size: cover;
             background-position: center;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
             color: white;
             position: relative;
@@ -97,22 +100,34 @@
         }
 
         .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
+            font-size: 2.5rem;
+            margin-bottom: 0;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
             color: white;
         }
 
-        .hero h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-            color: white;
+        /* Welcome section below hero - soft green background */
+        .welcome-box {
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0 20px 0;
         }
 
-        .hero p {
+        .welcome-box h3 {
+            font-size: 1.8rem;
+            color: #3a6b3a;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+        }
+
+        .welcome-box p {
             font-size: 1.1rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            max-width: 800px;
+            margin: 0 auto;
+            color: #4a6a4a;
+            line-height: 1.7;
         }
 
         .btn {
@@ -130,6 +145,16 @@
 
         .btn:hover {
             background: #558b2f;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: rgba(124, 179, 66, 0.8);
+            border-color: #7cb342;
         }
 
         section {
@@ -183,11 +208,49 @@
             color: #4a6a4a;
         }
 
+        .card .btn-small {
+            margin: 0 20px 20px;
+            display: inline-block;
+        }
+
+        .btn-small {
+            background: #7cb342;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-small:hover {
+            background: #558b2f;
+        }
+
         .offer-box {
             background: linear-gradient(135deg, #dcedbc, #e8f0e0);
             padding: 30px;
             border-radius: 20px;
             text-align: center;
+        }
+
+        .offer-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .quote-box {
+            background: #e8f0e0;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #3a6b3a;
         }
 
         footer {
@@ -204,7 +267,13 @@
                 gap: 15px;
             }
             .hero h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
+            }
+            .welcome-box h3 {
+                font-size: 1.4rem;
+            }
+            nav ul {
+                justify-content: center;
             }
         }
     </style>
@@ -223,35 +292,32 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="therapies.html">Therapies</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="readings.html">Readings & Events</a></li>
-                <li><a href="contact.html">About & Contact</a></li>
+                <li><a href="training.html">Training & Workshops</a></li>
+                <li><a href="events.html">Events & Bookings</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+<!-- Hero section - ONLY the short phrase -->
 <div class="hero">
     <div class="hero-text">
         <h2>Taking charge of your Health, Well-Being & Spiritual Development</h2>
-        <h3>A Warm Welcome</h3>
-        <p>Crystal Serenity offers holistic healing & celestial training for those seeking a positive and natural change for the Mind, Body, Soul & Spiritual development.</p>
-        <a href="contact.html" class="btn">Free Consultation</a>
     </div>
 </div>
 
 <main class="container">
-    <section>
-        <h2 class="section-title">Find Your Bliss and Serenity</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; color: #4a6a4a;">Discover The Landscape of Your Soul. A warm welcome fellow travellers — Crystal Serenity offers Training and holistic healing for individuals seeking positive, natural change.</p>
-        <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">Angelic Reiki</span>
-            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">Crystal Healing</span>
-            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">Soul Midwifery</span>
-            <span style="background:#dcedbc; padding:8px 18px; border-radius:30px; color:#3a6b3a;">Cartouche</span>
-        </div>
-    </section>
+    <!-- Welcome section - full text BELOW the hero -->
+    <div class="welcome-box">
+        <h3>A Warm Welcome Fellow Travellers</h3>
+        <p>Crystal Serenity is a School of Golden Light offering Training and Celestial Training along with holistic and complementary healing for individuals who are looking for a positive and natural change in their lives on a Body, Mind, Soul and Spiritual level.</p>
+        <a href="about.html" class="btn">Free Consultation</a>
+    </div>
 
+    <!-- How We Can Help - Buttons -->
     <section>
         <h2 class="section-title">How We Can Help You</h2>
         <div class="grid-3">
@@ -259,28 +325,40 @@
                 <div class="card-img" style="background-image: url('images/therapy-filler.jpg');"></div>
                 <h3>Healing Therapies</h3>
                 <p>Angelic Reiki, Crystal Therapy, Atlantean Healing, Axiatonal Alignment, Cartouche and more.</p>
+                <a href="therapies.html" class="btn-small">View Therapies</a>
             </div>
             <div class="card">
                 <div class="card-img" style="background-image: url('images/training-filler.jpg');"></div>
                 <h3>Training & Workshops</h3>
                 <p>Become a Practitioner or Teacher. Angelic Reiki, Metatron Method, Munay-Ki, Meditation.</p>
+                <a href="training.html" class="btn-small">View Training</a>
             </div>
             <div class="card">
                 <div class="card-img" style="background-image: url('images/readings-filler.jpg');"></div>
                 <h3>Card Readings</h3>
                 <p>Angel, Crystal, Dragon, Power Animal & Cartouche readings. 30 mins £40 / 60 mins £50.</p>
+                <a href="events.html" class="btn-small">Book a Reading</a>
             </div>
         </div>
     </section>
 
+    <!-- Quote - Moved from Contact page -->
+    <div class="quote-box">
+        <p>"Perceive the beauty in any situation and find the gift from spirit"</p>
+        <p>— Alberto Villoldo, Ph.D.</p>
+    </div>
+
+    <!-- Current Offers with Gift Voucher Button -->
     <section>
         <h2 class="section-title">Current Offers</h2>
         <div class="offer-box">
             <p><strong>Ring 07765 065 466</strong> for a free, no-obligation consultation</p>
             <p>Beautiful therapy room in Shelf, Halifax</p>
             <p>Concessions available for carers, pensioners, low income & regular treatments</p>
-            <p>Gift Vouchers available for special occasions</p>
-            <a href="contact.html" class="btn" style="margin-top: 15px;">View Full Details</a>
+            <div class="offer-buttons">
+                <a href="about.html" class="btn">Free Consultation</a>
+                <a href="events.html" class="btn btn-outline">Gift Vouchers</a>
+            </div>
         </div>
     </section>
 </main>
