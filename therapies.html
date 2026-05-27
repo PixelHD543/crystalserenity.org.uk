@@ -41,7 +41,7 @@
         }
 
         .logo h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #3a6b3a;
             font-family: 'Georgia', serif;
         }
@@ -49,12 +49,13 @@
         .logo p {
             font-style: italic;
             color: #5a7a5a;
+            font-size: 0.9rem;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
@@ -63,6 +64,7 @@
             color: #3a5a3a;
             font-weight: bold;
             transition: color 0.3s;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
@@ -121,6 +123,17 @@
             flex-grow: 1;
         }
 
+        .group-badge {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            margin-bottom: 10px;
+            align-self: flex-start;
+        }
+
         .btn-small {
             display: inline-block;
             background: #7cb342;
@@ -131,8 +144,6 @@
             margin-top: 20px;
             text-align: center;
             transition: background 0.3s;
-            border: none;
-            cursor: pointer;
             font-size: 0.9rem;
             align-self: flex-start;
         }
@@ -186,6 +197,9 @@
                 flex-direction: column;
                 gap: 15px;
             }
+            nav ul {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -203,9 +217,11 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="therapies.html">Therapies</a></li>
-                <li><a href="training.html">Training</a></li>
-                <li><a href="readings.html">Readings & Events</a></li>
-                <li><a href="contact.html">About & Contact</a></li>
+                <li><a href="training.html">Training & Workshops</a></li>
+                <li><a href="events.html">Events & Bookings</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
             </ul>
         </nav>
     </div>
@@ -294,6 +310,31 @@
         </div>
     </section>
 
+    <!-- Relaxation Therapy & Meditations - GROUP ACTIVITIES (NEW) -->
+    <section>
+        <h2 class="section-title">Relaxation Therapy and Meditations</h2>
+        <div class="grid-2">
+            <div class="service-card">
+                <span class="group-badge">Group Activity</span>
+                <h3>Relaxation Therapy</h3>
+                <p>Gentle, guided relaxation sessions designed to reduce stress, calm the nervous system, and restore inner peace. Available as a group activity.</p>
+                <a href="details/relaxation-therapy.html" class="btn-small">Learn More</a>
+            </div>
+            <div class="service-card">
+                <span class="group-badge">Group Activity</span>
+                <h3>Meditation Classes</h3>
+                <p>Regular day and evening meditation classes. With over 15 years experience delivering meditation in care homes, GP practices, and online via YouTube. Also available for Cancer Support Yorkshire.</p>
+                <a href="details/meditation-classes.html" class="btn-small">Learn More</a>
+            </div>
+            <div class="service-card">
+                <span class="group-badge">Group Activity</span>
+                <h3>Cartouche Meditations</h3>
+                <p>Guided meditations with Egyptian symbols, offered as a group experience.</p>
+                <a href="details/cartouche-meditations.html" class="btn-small">Learn More</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Egyptian & Cartouche -->
     <section>
         <h2 class="section-title">Egyptian and Cartouche Healing</h2>
@@ -302,11 +343,6 @@
                 <h3>Cartouche Ancient Egyptian Healing</h3>
                 <p>Cartouche is known as an "Oracle of Ancient Egyptian Magic".</p>
                 <a href="details/cartouche-healing.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Cartouche Meditations</h3>
-                <p>Guided meditations with Egyptian symbols.</p>
-                <a href="details/cartouche-meditations.html" class="btn-small">Learn More</a>
             </div>
             <div class="service-card">
                 <h3>Element and Elemental Healing</h3>
@@ -420,7 +456,7 @@
             <h3>Bespoke Treatments Available</h3>
             <p>If you are a cancer patient or carer experiencing exhaustion, a tailored treatment can be arranged.</p>
             <p>Suffering from chronic illness, depression, or going through an operation? We are here to help.</p>
-            <a href="contact.html" class="btn">Book a Free Consultation</a>
+            <a href="about.html" class="btn">Book a Free Consultation</a>
         </div>
     </section>
 </main>
