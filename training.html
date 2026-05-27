@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal Serenity | Therapies & Treatments</title>
+    <title>Crystal Serenity | Training & Workshops</title>
     <style>
         * {
             margin: 0;
@@ -97,41 +97,42 @@
             padding-left: 20px;
         }
 
-        .grid-2 {
+        .training-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
-        .service-card {
+        .course-card {
             background: white;
             border-radius: 15px;
-            padding: 25px;
+            overflow: hidden;
             box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
             display: flex;
             flex-direction: column;
         }
 
-        .service-card h3 {
-            color: #7cb342;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
+        .course-card:hover {
+            transform: translateY(-5px);
         }
 
-        .service-card p {
+        .course-img {
+            height: 180px;
+            background-color: #dcedbc;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .course-card h3 {
+            color: #7cb342;
+            margin: 20px 20px 10px;
+        }
+
+        .course-card p {
+            margin: 0 20px 20px;
             color: #4a6a4a;
             flex-grow: 1;
-        }
-
-        .group-badge {
-            display: inline-block;
-            background: #7cb342;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            margin-bottom: 10px;
-            align-self: flex-start;
         }
 
         .btn-small {
@@ -141,7 +142,7 @@
             padding: 8px 20px;
             border-radius: 40px;
             text-decoration: none;
-            margin-top: 20px;
+            margin: 0 20px 20px;
             text-align: center;
             transition: background 0.3s;
             font-size: 0.9rem;
@@ -152,21 +153,12 @@
             background: #558b2f;
         }
 
-        .badge {
-            display: inline-block;
-            background: #dcedbc;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-top: 10px;
-            color: #3a6b3a;
-        }
-
-        .offer-box {
+        .meditation-box {
             background: linear-gradient(135deg, #dcedbc, #e8f0e0);
             padding: 30px;
             border-radius: 20px;
             text-align: center;
+            margin: 30px 0;
         }
 
         footer {
@@ -229,241 +221,159 @@
 
 <div class="page-hero">
     <div class="container">
-        <h1>Healing Therapies</h1>
-        <p>Natural, non-invasive healing for Body, Mind, Soul and Spirit</p>
+        <h1>Training and Workshops</h1>
+        <p>Become a Practitioner or deepen your spiritual path</p>
     </div>
 </div>
 
 <main class="container">
-    <!-- Angelic & Celestial Therapies -->
+    <!-- Angelic Reiki Training - UPDATED LEVELS -->
     <section>
-        <h2 class="section-title">Angelic and Celestial Therapies</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Angelic Reiki</h3>
-                <p>Divine healing energy working with angelic frequencies.</p>
-                <span class="badge">Member of Angelic Reiki Association</span>
-                <a href="details/angelic-reiki.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Angelic Reiki Training</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/angelic-training-filler.jpg');"></div>
+                <h3>Angelic Reiki Practitioner</h3>
+                <p>Levels 1 and 2 - Become a certified Angelic Reiki Practitioner. New dates available — contact for details.</p>
+                <a href="details/angelic-reiki-practitioner.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Angelic Crystal Reiki</h3>
-                <p>Combines angelic energy with the power of crystals.</p>
-                <a href="details/angelic-crystal-reiki.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/master-teacher-filler.jpg');"></div>
+                <h3>Angelic Reiki Master Teacher</h3>
+                <p>Levels 3 and 4 - Advanced training to teach Angelic Reiki to others.</p>
+                <a href="details/angelic-reiki-master.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Atlantean Soul Retrieval and Soul Healing</h3>
-                <p>Ancient Atlantean techniques to restore lost soul fragments.</p>
-                <a href="details/atlantean-soul-retrieval.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/monthly-share-filler.jpg');"></div>
+                <h3>Monthly Angelic Reiki Share</h3>
+                <p>Development and Meditation — Saturday mornings 10:30 - 13:00</p>
+                <a href="details/angelic-reiki-share.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Atlantean Body Scan / Removal of Attachments</h3>
-                <p>Identify and clear energetic attachments.</p>
-                <a href="details/atlantean-body-scan.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/metatron-filler.jpg');"></div>
+                <h3>Metatron Method Training</h3>
+                <p>Work with Archangel Metatron's sacred geometry and energy.</p>
+                <a href="details/metatron-method.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Celestial Energy Healing</h3>
-                <p>High-frequency celestial light for deep transformation.</p>
-                <a href="details/celestial-energy-healing.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Axiatonal Alignment Therapy</h3>
-                <p>Activates your body's subtle energy pathways.</p>
-                <a href="details/axiatonal-alignment.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Mahatma Healing Therapy</h3>
-                <p>Advanced energy healing from the Mahatma energy.</p>
-                <a href="details/mahatma-healing.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/soul-midwifery-filler.jpg');"></div>
+                <h3>Soul Midwifery Training</h3>
+                <p>Support souls through the transition of death and rebirth.</p>
+                <a href="details/soul-midwifery.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Crystal Therapies -->
+    <!-- Crystal Workshops - MOVED FROM EVENTS TO TRAINING -->
     <section>
-        <h2 class="section-title">Crystal Therapies</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Crystal Healing</h3>
-                <p>Bespoke treatments using crystals to restore balance.</p>
-                <a href="details/crystal-healing.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Crystal Healing Workshops</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/crystal-workshop-filler.jpg');"></div>
+                <h3>Bespoke Crystal Healing Workshops</h3>
+                <p>Fun, interactive workshops to learn about crystals and crystal healing. Contact for upcoming dates and group bookings.</p>
+                <a href="details/bespoke-crystal-workshops.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Crystal Meridian Therapy</h3>
-                <p>Crystals applied to meridian points for energy flow.</p>
-                <a href="details/crystal-meridian.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/crystal-grids-filler.jpg');"></div>
+                <h3>Crystal Grids Workshop</h3>
+                <p>Learn to create grids for manifesting, protection, and healing.</p>
+                <a href="details/crystal-grids-workshop.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Crystal Reflexology</h3>
-                <p>Reflexology enhanced with crystal energies.</p>
-                <a href="details/crystal-reflexology.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Chakra Balancing and Auric Cleanse</h3>
-                <p>Realign your energy centres and clear your aura.</p>
-                <a href="details/chakra-balancing.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Crystal Grids</h3>
-                <p>Manifesting, protection, and intention-setting grids.</p>
-                <a href="details/crystal-grids.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/crystal-talks-filler.jpg');"></div>
+                <h3>Crystal Therapy Talks</h3>
+                <p>I do Talks and Workshops on Crystal Therapy — contact me for details.</p>
+                <a href="details/crystal-therapy-talks.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Relaxation Therapy & Meditations - GROUP ACTIVITIES (NEW) -->
+    <!-- Munay-Ki -->
     <section>
-        <h2 class="section-title">Relaxation Therapy and Meditations</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <span class="group-badge">Group Activity</span>
-                <h3>Relaxation Therapy</h3>
-                <p>Gentle, guided relaxation sessions designed to reduce stress, calm the nervous system, and restore inner peace. Available as a group activity.</p>
-                <a href="details/relaxation-therapy.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Munay-Ki Training</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/munay-ki-filler.jpg');"></div>
+                <h3>Munay-Ki — The Nine Rites</h3>
+                <p>Initiations to wisdom and power, following the Four Winds Society tradition.</p>
+                <a href="details/munay-ki-nine-rites.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <span class="group-badge">Group Activity</span>
-                <h3>Meditation Classes</h3>
-                <p>Regular day and evening meditation classes. With over 15 years experience delivering meditation in care homes, GP practices, and online via YouTube. Also available for Cancer Support Yorkshire.</p>
-                <a href="details/meditation-classes.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/13th-rite-filler.jpg');"></div>
+                <h3>13th Rite of the Womb</h3>
+                <p>Healing rite for womb-related trauma and empowerment.</p>
+                <a href="details/13th-rite-womb.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <span class="group-badge">Group Activity</span>
-                <h3>Cartouche Meditations</h3>
-                <p>Guided meditations with Egyptian symbols, offered as a group experience.</p>
-                <a href="details/cartouche-meditations.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/munay-ki-healing-filler.jpg');"></div>
+                <h3>Munay-Ki Healing</h3>
+                <p>Healing sessions using the Munay-Ki rites.</p>
+                <a href="details/munay-ki-healing.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Egyptian & Cartouche -->
+    <!-- Cartouche & Egyptian Astrology -->
     <section>
-        <h2 class="section-title">Egyptian and Cartouche Healing</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Cartouche Ancient Egyptian Healing</h3>
-                <p>Cartouche is known as an "Oracle of Ancient Egyptian Magic".</p>
-                <a href="details/cartouche-healing.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Cartouche and Egyptian Astrology</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/cartouche-training-filler.jpg');"></div>
+                <h3>Cartouche Training</h3>
+                <p>With Di Wall — Ancient Egyptian healing and wisdom.</p>
+                <a href="details/cartouche-training.html" class="btn-small">Learn More</a>
             </div>
-            <div class="service-card">
-                <h3>Element and Elemental Healing</h3>
-                <p>Working with the elemental kingdoms for balance and harmony.</p>
-                <a href="details/elemental-healing.html" class="btn-small">Learn More</a>
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/egypt-astrology-filler.jpg');"></div>
+                <h3>Egyptian Astrology Training</h3>
+                <p>Discover your Egyptian zodiac sign and its meanings.</p>
+                <a href="details/egyptian-astrology.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Access Consciousness -->
+    <!-- Atlantis Talks -->
     <section>
-        <h2 class="section-title">Access Consciousness</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Access Facelift</h3>
-                <p>This treatment is not a facial, no products are used in the treatment.</p>
-                <a href="details/access-facelift.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>The Bars Healing</h3>
-                <p>32 points on the head that hold thoughts and emotions.</p>
-                <a href="details/the-bars.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Body Healing Processes</h3>
-                <p>Deep cellular healing and release.</p>
-                <a href="details/body-healing-processes.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Atlantis and Elemental Healing</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/atlantis-talks-filler.jpg');"></div>
+                <h3>Atlantis & Atlantean Healing Talks</h3>
+                <p>I do talks on Atlantis and Atlantean Healing, Elements and Elemental Healing. Contact me for details.</p>
+                <a href="details/atlantis-talks.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- NLP & Life Coaching -->
+    <!-- Magical Thinking & Sirius - MERGED -->
     <section>
-        <h2 class="section-title">NLP and Life Coaching</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Life Coaching</h3>
-                <p>Transform your life with professional coaching.</p>
-                <a href="details/life-coaching.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Mentoring</h3>
-                <p>Spiritual mentorship for your journey.</p>
-                <a href="details/mentoring.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Coaching with Spirit</h3>
-                <p>Blending spiritual guidance with practical coaching.</p>
-                <a href="details/coaching-with-spirit.html" class="btn-small">Learn More</a>
+        <h2 class="section-title">Magical Thinking and Exploring Sirius</h2>
+        <div class="training-grid">
+            <div class="course-card">
+                <div class="course-img" style="background-image: url('images/magical-sirius-filler.jpg');"></div>
+                <h3>Magical Thinking and Exploring Sirius</h3>
+                <p>Explore the power of intention and manifestation while connecting with the spiritual energies of Sirius.</p>
+                <a href="details/magical-thinking-sirius.html" class="btn-small">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Kinesiology & Massage -->
+    <!-- Meditation Classes -->
     <section>
-        <h2 class="section-title">Holistic Bodywork</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Educational Kinesiology</h3>
-                <p>TFH Touch for Health | Brain Gym</p>
-                <a href="details/kinesiology.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Luxury Rose Quartz Facial</h3>
-                <p>With or without bespoke chakra balance.</p>
-                <a href="details/rose-quartz-facial.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Indian Head Massage</h3>
-                <p>Deep relaxation for head, neck, and shoulders.</p>
-                <a href="details/indian-head-massage.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Thai Foot and Hand Massage</h3>
-                <p>Stimulating massage using acupressure points.</p>
-                <a href="details/thai-foot-massage.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Holistic Facial Treatments</h3>
-                <p>Luxury facial with beautiful products to suit your skin type.</p>
-                <a href="details/holistic-facial.html" class="btn-small">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Therapies -->
-    <section>
-        <h2 class="section-title">Additional Healing Modalities</h2>
-        <div class="grid-2">
-            <div class="service-card">
-                <h3>Past Life Regression Therapy</h3>
-                <p>Using hypnotherapy techniques.</p>
-                <a href="details/past-life-regression.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Animal Healing</h3>
-                <p>Healing for animals with Reiki and crystals. Distant healing also available.</p>
-                <a href="details/animal-healing.html" class="btn-small">Learn More</a>
-            </div>
-            <div class="service-card">
-                <h3>Distant Healing</h3>
-                <p>Healing sent remotely, including for animals.</p>
-                <a href="details/distant-healing.html" class="btn-small">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Special Offer -->
-    <section>
-        <div class="offer-box">
-            <h3>Bespoke Treatments Available</h3>
-            <p>If you are a cancer patient or carer experiencing exhaustion, a tailored treatment can be arranged.</p>
-            <p>Suffering from chronic illness, depression, or going through an operation? We are here to help.</p>
-            <a href="about.html" class="btn">Book a Free Consultation</a>
+        <div class="meditation-box">
+            <h3>Meditation and Relaxation Classes</h3>
+            <p>Regular day and evening meditation and relaxation classes available.</p>
+            <p>With over 15 years experience delivering meditation in care homes, GP practices, sheltered housing, church recreation areas, and online via YouTube.</p>
+            <p>Also available for Cancer Support Yorkshire</p>
+            <a href="about.html" class="btn">Enquire About Classes</a>
         </div>
     </section>
 </main>
 
 <footer>
     <div class="container">
-        <p>© 2013-2026 Crystal Serenity | ACHO Registered | BCMA Registered | NCP Accredited</p>
+        <p>© 2013-2026 Crystal Serenity | Certified Munay-Ki Mentor | INLPTA NLP | Over 18 years experience</p>
         <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
     </div>
 </footer>
