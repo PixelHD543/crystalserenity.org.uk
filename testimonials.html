@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Serenity | Testimonials</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            color: #3a6b3a;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-style: italic;
+            color: #5a7a5a;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a5a3a;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7cb342;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
+            padding: 60px 0;
+            text-align: center;
+            color: #2d4a2d;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #3a6b3a;
+            margin-bottom: 40px;
+            font-family: 'Georgia', serif;
+            border-left: 5px solid #7cb342;
+            padding-left: 20px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: #dcedbc;
+            font-family: 'Georgia', serif;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            opacity: 0.5;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #4a6a4a;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #7cb342;
+            margin-top: 15px;
+            border-top: 1px solid #c8e0c8;
+            padding-top: 15px;
+        }
+
+        .testimonial-service {
+            font-size: 0.85rem;
+            color: #8b9a6e;
+            margin-top: 5px;
+        }
+
+        .rating {
+            color: #d4af37;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .submit-box {
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer {
+            background: #2d4a2d;
+            color: #e8f0e0;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #558b2f;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Crystal Serenity</h1>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+                <li><a href="training.html">Training & Workshops</a></li>
+                <li><a href="events.html">Events & Bookings</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="page-hero">
+    <div class="container">
+        <h1>Client Testimonials</h1>
+        <p>Real stories from those who have experienced healing and training at Crystal Serenity</p>
+    </div>
+</div>
+
+<main class="container">
+    <section>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonials-grid">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"Cathy has a true gift. After my Angelic Reiki session, I felt lighter and more at peace than I have in years. She created a safe, calming space and I left feeling completely transformed. I cannot recommend her enough."</p>
+                <div class="testimonial-author">- Sarah M.</div>
+                <div class="testimonial-service">Angelic Reiki Healing</div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"The Angelic Reiki Practitioner training was incredible. Cathy is a knowledgeable and patient teacher who truly wants her students to succeed. I left feeling confident and ready to start my own practice."</p>
+                <div class="testimonial-author">- David R.</div>
+                <div class="testimonial-service">Angelic Reiki Practitioner Course</div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"I had a Cartouche reading with Cathy and was amazed at the accuracy. She picked up on things no one else could have known. It gave me clarity on my life path and I left feeling reassured and hopeful."</p>
+                <div class="testimonial-author">- Linda T.</div>
+                <div class="testimonial-service">Cartouche Reading</div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"The Crystal Healing workshop was both fun and educational. Cathy's passion for crystals is contagious. I now feel confident using crystals for myself and my family. Highly recommended."</p>
+                <div class="testimonial-author">- Emma W.</div>
+                <div class="testimonial-service">Bespoke Crystal Healing Workshop</div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"I came to Cathy feeling stuck and lost after a difficult period in my life. Through her Atlantean Healing sessions, she helped me release old trauma and find my purpose again. She truly is 'The Clearer'."</p>
+                <div class="testimonial-author">- Mark S.</div>
+                <div class="testimonial-service">Atlantean Soul Retrieval</div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"The meditation classes have been a lifeline for me. Cathy's calming presence and gentle guidance have helped me manage my anxiety. I attend every week and always leave feeling grounded."</p>
+                <div class="testimonial-author">- Helen P.</div>
+                <div class="testimonial-service">Weekly Meditation Classes</div>
+            </div>
+
+            <!-- Testimonial 7 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"I completed my Munay-Ki rites with Cathy and it was a profoundly moving experience. She honours the tradition beautifully. I feel forever changed and deeply grateful."</p>
+                <div class="testimonial-author">- Rachel K.</div>
+                <div class="testimonial-service">Munay-Ki The Nine Rites</div>
+            </div>
+
+            <!-- Testimonial 8 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"Cathy's distant healing for my elderly dog was remarkable. Within days, he was more active and seemed much happier. She has a true connection with animals."</p>
+                <div class="testimonial-author">- James B.</div>
+                <div class="testimonial-service">Distant Animal Healing</div>
+            </div>
+
+            <!-- Testimonial 9 -->
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="rating">★★★★★</div>
+                <p class="testimonial-text">"The Access Facelift treatment was unlike anything I have experienced. No products, just gentle energy work. My face felt lifted and my whole body felt relaxed. Highly recommend."</p>
+                <div class="testimonial-author">- Fiona L.</div>
+                <div class="testimonial-service">Access Facelift</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submit Your Testimonial -->
+    <div class="submit-box">
+        <h3>Share Your Experience</h3>
+        <p>Have you experienced healing or training at Crystal Serenity?</p>
+        <p>We would love to hear your story.</p>
+        <a href="about.html" class="btn">Share Your Testimonial</a>
+        <p style="margin-top: 15px; font-size: 0.85rem;">Your feedback helps others find their path to healing</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2013-2026 Crystal Serenity | Divine Angelic Blessings to Everyone</p>
+        <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+        <p>Member: Angelic Reiki Association | ACHO | BCMA | NCP</p>
+    </div>
+</footer>
+
+</body>
+</html>
