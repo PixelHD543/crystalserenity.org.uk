@@ -1,1 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Serenity | About & Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            color: #3a6b3a;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-style: italic;
+            color: #5a7a5a;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a5a3a;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7cb342;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
+            padding: 60px 0;
+            text-align: center;
+            color: #2d4a2d;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #c8e0c8;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #3a6b3a;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+            border-left: 5px solid #7cb342;
+            padding-left: 20px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-card h2 {
+            color: #7cb342;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #dcedbc;
+            padding-bottom: 10px;
+        }
+
+        .qual-badge {
+            display: inline-block;
+            background: #dcedbc;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.85rem;
+            color: #3a6b3a;
+        }
+
+        .qual-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .qual-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #c8e0c8;
+        }
+
+        .cancellation {
+            background: #e8f0e0;
+            padding: 20px;
+            border-left: 5px solid #7cb342;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .bio-text {
+            background: #e8f0e0;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .bio-text p {
+            margin-bottom: 20px;
+        }
+
+        .badge-gold {
+            background: #d4af37;
+            color: #2d4a2d;
+            font-weight: bold;
+        }
+
+        .links-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .links-box a {
+            color: #7cb342;
+            text-decoration: none;
+        }
+
+        .links-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #2d4a2d;
+            color: #e8f0e0;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #558b2f;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Crystal Serenity</h1>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+                <li><a href="training.html">Training & Workshops</a></li>
+                <li><a href="events.html">Events & Bookings</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="page-hero">
+    <div class="container">
+        <h1>About Cathy & Crystal Serenity</h1>
+        <p>Owner, Founder, and Your Trusted Healer & Teacher</p>
+    </div>
+</div>
+
+<main class="container">
+    <!-- Contact & Opening Hours Grid -->
+    <div class="grid-2">
+        <div class="info-card">
+            <h2>Get in Touch</h2>
+            <p><strong>Phone:</strong> 07765 065 466</p>
+            <p><strong>Email:</strong> cathy@crystalserenity.org.uk</p>
+            <p><strong>Location:</strong> Shelf, Halifax (full address given upon booking)</p>
+            <p><strong>Travel:</strong> Home visits available within 8 miles (travel expenses apply beyond)</p>
+            <a href="mailto:cathy@crystalserenity.org.uk" class="btn">Email Now</a>
+        </div>
+
+        <div class="info-card">
+            <h2>Opening Hours</h2>
+            <ul class="qual-list">
+                <li><strong>Monday:</strong> 10am - 6pm</li>
+                <li><strong>Tuesday:</strong> 10am - 6pm</li>
+                <li><strong>Wednesday:</strong> 10am - 5pm</li>
+                <li><strong>Thursday:</strong> 10am - 5pm</li>
+                <li><strong>Friday:</strong> 10am - 4pm</li>
+                <li><strong>Saturday:</strong> 10am - 1pm</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+            <p><em>Evening appointments available on request.</em></p>
+            <p><strong>Free Consultations</strong> with all therapies</p>
+            <p>Beautiful purpose-built Therapy Room in Shelf, Halifax</p>
+        </div>
+    </div>
+
+    <!-- Golden Atlantis Workshop -->
+    <section>
+        <h2 class="section-title">Golden Atlantis Workshop</h2>
+        <div class="bio-text">
+            <p><strong>Owner and Founder of Crystal Serenity.</strong></p>
+            <p><strong>Qualified Teacher of Golden Atlantis for Diana Cooper School of White Light</strong></p>
+            <p>Cathy is a Professionally Qualified Intuitive Divine Lightworker, Crystal Therapist & Tutor, Angelic Reiki Master Teacher, Angelic Crystal Reiki Practitioner, Atlantean Healing Master Practitioner, Past Life Regression Practitioner, NLP Master Practitioner, Trainer and Relaxation/Meditation Leader, Workshop Facilitator, Access Bars, Body Process and Access Facelift Practitioner, Thai Hand & Foot Massage Practitioner, Indian Head Massage Practitioner, Facials & Rose Quartz facial therapist and Medium that provides Complementary & Holistic Therapies and teachings to those who want to make an investment in their life and future that supports their overall Well Being, Enlightenment & Ascension.</p>
+            <p>Educational Kinesiology training in Brain Gym and Touch for Health.</p>
+            <p>Cathy is a Munay-Ki Mentor and Healer - Gifting of the Nine Rites of Initiation which heals us and transforms the human energy field into that of homo luminous, a transcended light being.</p>
+        </div>
+    </section>
+
+    <!-- The Clearer Title -->
+    <section>
+        <h2 class="section-title">The Clearer</h2>
+        <div class="bio-text">
+            <p>I have been given the title of <strong>"The Clearer"</strong> by my guides a few years ago now. This is because clients that find themselves at a crossroad, whether it be due to health problems, emotional blockages, relationship problems, or career choices, are feeling stuck. They feel that after a treatment with me, they are able to move along their journey with more clarity of where they want to be in life and who they want to be.</p>
+        </div>
+    </section>
+
+    <!-- Full Bio / Cathy's Story -->
+    <section>
+        <h2 class="section-title">Cathy's Story & Philosophy</h2>
+        <div class="bio-text">
+            <p>I am very passionate about the teachings and treatments I provide, and I ensure that I keep up to date with current training along with the learnings and channelings from my Guides and Archangels so that individuals receive the best treatment and learning that Crystal Serenity can offer. I love working with the natural healing energies of our beloved crystal kingdom and incorporating them in many of the treatments I offer. My belief is to be your true authentic self, standing in your own power.</p>
+            <p><strong>Cathy specialises in:</strong></p>
+            <ul style="margin-left: 30px; margin-bottom: 20px;">
+                <li>Meridian Therapy and acupressure point therapy, treating individuals that have MS</li>
+                <li>Releasing trauma, bringing stability back into your life, relieving pain</li>
+                <li>The Spiritual Development of individuals that would like to ascend into higher dimensions</li>
+            </ul>
+            <p>Working hand in hand with Archangels, Ascended Masters and expressions of the Divine, channeling divine messages for those that require assistance on their journey through life.</p>
+            <p><strong>Past Life Therapy</strong> - removing shackles, cords & attachments to past lives. Are you haunted by repeat negative incidents in your life? Have you ever wondered if it is from a past life? Try my Atlantean Healing to discover what past lives you have had and what requires removing to help you move forward with ease in this life. Experience deep Soul healing with the Atlantean Soul Retrieval.</p>
+            <p>I was working in a corporate business which made me suppress my gifts although I continued to have parties for friends and family. I became aware of my Native American guide and many more healing modalities along with more spiritual teachers so I began developing myself over the years to give me focus on what I was expected to do that was advised by my guides, and that was to provide a service to others who required help with their body, mind or spirit personal development and ascension.</p>
+            <p>My outlook on life had definitely changed over the years. My calling became much stronger and I was determined to set up my own business as a Holistic Healer and Teacher. In April 2013, Crystal Serenity was founded, and I thoroughly love what I do with a passion.</p>
+            <p>With my extensive knowledge and experience, I integrate elements of this knowledge and healing into my treatments to enhance and evolve my Healing Practice and Teachings with empathy and from the heart, to ensure clients and students receive the truest and best healing and teachings that will assist them on their journey through life.</p>
+            <p>I create a safe and calming environment in a purpose-built therapy room, which allows you to be relaxed and put at ease. Everyone is different, so I adapt my style and techniques to suit each individual's needs.</p>
+            <p><strong>Workshops offered include:</strong> Angelic Reiki Levels 1 & 2 Practitioner, Levels 3 & 4 Master Teacher, Metatron Method, Soul Midwifery.</p>
+            <p>I do Talks and Workshops on Crystal Therapy and on Atlantis & Atlantean Healing, Elements & Elemental Healing. Contact me for details.</p>
+            <p>I can travel to your home to do most of the healing modalities. Additional travelling expenses could be incurred over 8 miles from base — contact me for details.</p>
+        </div>
+    </section>
+
+    <!-- Qualifications & Memberships -->
+    <section>
+        <h2 class="section-title">Qualifications & Professional Memberships</h2>
+        <div class="info-card">
+            <div>
+                <span class="qual-badge">Member - Angelic Reiki Association</span>
+                <span class="qual-badge">ACHO Registered Practitioner</span>
+                <span class="qual-badge">Adherence to ACHO rules and Code of Conduct</span>
+                <span class="qual-badge">BCMA Registered Practitioner</span>
+                <span class="qual-badge">Professional Qualified Therapist</span>
+                <span class="qual-badge">One-to-one personal & bespoke treatments</span>
+                <span class="qual-badge">Caring and Passionate Therapist</span>
+                <span class="qual-badge">INLPTA NLP - over 18 years experience</span>
+                <span class="qual-badge">Certified Munay-Ki Mentor - Four Winds Society</span>
+                <span class="qual-badge">NCP Accredited (National Council of Psychotherapists)</span>
+                <span class="qual-badge">Guild of Holistic Therapists</span>
+                <span class="qual-badge">Guild of Beauty Therapists</span>
+                <span class="qual-badge">Certificate in Training Practice (CITP) - Huddersfield University</span>
+                <span class="qual-badge">Qualified in Anatomy & Physiology</span>
+                <span class="qual-badge">DBS Checked</span>
+                <span class="qual-badge">Health & Safety Certified</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Highlights -->
+    <section>
+        <h2 class="section-title">Experience & Community Work</h2>
+        <div class="info-card">
+            <ul class="qual-list">
+                <li>Relaxation and Meditation classes - over 15 years experience in Sheltered Housing, Care Homes, GP Practice, Holistic Well Being Centre, Church Recreation Area, Shelf Village Hall, Crystal Serenity Sanctuary Therapy Room, and on YouTube</li>
+                <li>Cancer Support Yorkshire - Sessional Worker holding meditation classes and volunteer therapist for treatments</li>
+                <li>Delivering Training and Workshops with over 18 years experience in corporate environments and at Crystal Serenity Academy</li>
+                <li>Providing card readings since the 1970s</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Affiliates & Recommended Links -->
+    <section>
+        <h2 class="section-title">Affiliations & Recommended Links</h2>
+        <div class="grid-2">
+            <div class="info-card">
+                <h2>Professional Affiliations</h2>
+                <ul class="qual-list">
+                    <li>Past Life Regression - NCP National Council of Psychotherapists</li>
+                    <li>Access Consciousness</li>
+                    <li>Munay-Ki - Four Winds Society</li>
+                    <li>Angelic Reiki Association</li>
+                    <li>Crystal Healing Diploma - Soothing Stones School of Crystal Healing</li>
+                    <li>Anatomy & Physiology - Soothing Stones School of Crystal Healing</li>
+                    <li>ACHO - Affiliation of Crystal Healing Organisation</li>
+                    <li>NLP Master Practitioner - INALPTA (International NLP Trainers Association)</li>
+                    <li>CITP Certificate in Training Practice - Huddersfield University</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h2>Professional Titles</h2>
+                <p>Cathy Ritchie</p>
+                <p>SSSCHT ACHO.AP22004 Dip BCMA Reg.</p>
+                <ul class="qual-list">
+                    <li>Angelic Reiki Master Teacher</li>
+                    <li>Metatron Method Teacher</li>
+                    <li>Soul Midwifery Teacher</li>
+                    <li>Munay-Ki Mentor</li>
+                    <li>Angelic Crystal Reiki Practitioner</li>
+                    <li>Divine Lightworker</li>
+                    <li>Master Atlantean Healing Practitioner</li>
+                    <li>Advanced Master Crystal Practitioner & Tutor</li>
+                    <li>Cartouche Ancient Egyptian Practitioner & Tutor</li>
+                    <li>Elemental Healing Practitioner</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="links-box">
+            <h3 style="color: #7cb342; margin-bottom: 15px;">Recommended Websites & Resources</h3>
+            <p><a href="#" target="_blank">Angelic Reiki Association</a> | 
+               <a href="#" target="_blank">ACHO - Crystal Healing Organisation</a> | 
+               <a href="#" target="_blank">BCMA</a> | 
+               <a href="#" target="_blank">National Council of Psychotherapists</a> | 
+               <a href="#" target="_blank">Four Winds Society</a> | 
+               <a href="#" target="_blank">Access Consciousness</a> | 
+               <a href="#" target="_blank">INLPTA</a> | 
+               <a href="#" target="_blank">Diana Cooper School of White Light</a></p>
+            <p style="margin-top: 10px; font-size: 0.85rem; color: #7a9a7a;"><em>Note: External links will open in a new window. Some links are placeholders - please replace with actual URLs.</em></p>
+        </div>
+    </section>
+
+    <!-- Cancellation Policy -->
+    <div class="cancellation">
+        <h3>Cancellation Policy</h3>
+        <p>In the event you need to cancel an appointment, please do so at least 24 hours prior to your appointment or you will be charged the usual treatment fee.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2013-2026 Crystal Serenity | Divine Angelic Blessings to Everyone</p>
+        <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+        <p>Health & Safety | DBS Checked</p>
+    </div>
+</footer>
+
+</body>
+</html>
