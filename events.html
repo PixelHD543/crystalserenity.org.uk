@@ -1,1 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Serenity | Events & Bookings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            color: #3a6b3a;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-style: italic;
+            color: #5a7a5a;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a5a3a;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7cb342;
+        }
+
+        .page-hero {
+            background: linear-gradient(135deg, #b8d4b8, #a8c4a8);
+            padding: 60px 0;
+            text-align: center;
+            color: #2d4a2d;
+        }
+
+        .page-hero h1 {
+            font-size: 2.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #c8e0c8;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #3a6b3a;
+            margin-bottom: 30px;
+            font-family: 'Georgia', serif;
+            border-left: 5px solid #7cb342;
+            padding-left: 20px;
+        }
+
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .price-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .price-card h3 {
+            color: #7cb342;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2d4a2d;
+            margin: 15px 0;
+        }
+
+        .event-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #7cb342;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .event-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .event-card h3 {
+            color: #7cb342;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .event-date {
+            color: #8b9a6e;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .event-location {
+            color: #5a7a5a;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .event-description {
+            color: #4a6a4a;
+            margin-top: 10px;
+        }
+
+        .btn-book {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .btn-book:hover {
+            background: #558b2f;
+        }
+
+        .gift-card {
+            background: linear-gradient(135deg, #dcedbc, #e8f0e0);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 30px;
+            color: #7a9a7a;
+            font-style: italic;
+        }
+
+        .voucher-box {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #2d4a2d;
+            color: #e8f0e0;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #558b2f;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Crystal Serenity</h1>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="therapies.html">Therapies</a></li>
+                <li><a href="training.html">Training & Workshops</a></li>
+                <li><a href="events.html">Events & Bookings</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="page-hero">
+    <div class="container">
+        <h1>Events and Bookings</h1>
+        <p>Card readings, workshops, and spiritual gatherings</p>
+    </div>
+</div>
+
+<main class="container">
+    <!-- Card Readings Section -->
+    <section>
+        <h2 class="section-title">Card Readings</h2>
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>Angel Cards</h3>
+                <div class="price">30 mins: £40</div>
+                <div class="price">60 mins: £50</div>
+                <a href="booking.html?type=angel-cards" class="btn-book">Book Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Crystal Cards</h3>
+                <div class="price">30 mins: £40</div>
+                <div class="price">60 mins: £50</div>
+                <a href="booking.html?type=crystal-cards" class="btn-book">Book Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Dragon Cards</h3>
+                <div class="price">30 mins: £40</div>
+                <div class="price">60 mins: £50</div>
+                <a href="booking.html?type=dragon-cards" class="btn-book">Book Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Oracle Cards</h3>
+                <div class="price">30 mins: £40</div>
+                <div class="price">60 mins: £50</div>
+                <a href="booking.html?type=oracle-cards" class="btn-book">Book Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Cartouche Readings</h3>
+                <div class="price">30 mins: £40</div>
+                <div class="price">60 mins: £50</div>
+                <a href="booking.html?type=cartouche" class="btn-book">Book Now</a>
+            </div>
+            <div class="price-card">
+                <h3>Power Animal Readings</h3>
+                <p>Discover your totem animals</p>
+                <div class="price">30 mins: £40</div>
+                <a href="booking.html?type=power-animal" class="btn-book">Book Now</a>
+            </div>
+        </div>
+        <div class="gift-card" style="margin-top: 20px; background: white; border-left: 5px solid #7cb342; text-align: left;">
+            <h3 style="color: #7cb342;">About Your Reading</h3>
+            <p>Authentic and accurate card readings accompanied with a personal CD recording of your reading.</p>
+            <p>Available via <strong>Zoom</strong> or at Crystal Serenity's therapy room in Shelf, Halifax.</p>
+            <p>What area of your life would you like more clarity on? Relationships, family, friends, career, life purpose, spiritual journey — all welcome.</p>
+        </div>
+        <div class="disclaimer">
+            All readings are for entertainment purposes
+        </div>
+    </section>
+
+    <!-- Clickable Events -->
+    <section>
+        <h2 class="section-title">Upcoming Events</h2>
+        
+        <div class="event-card" onclick="location.href='details/angelic-reiki-share.html';">
+            <div class="event-date">📅 Saturday Mornings | 10:30 - 13:00</div>
+            <h3>Monthly Angelic Reiki Share</h3>
+            <div class="event-location">📍 Crystal Serenity Therapy Room, Shelf, Halifax</div>
+            <p class="event-description">Development, meditation, and sharing circle for Angelic Reiki practitioners. Open to all levels.</p>
+            <a href="details/angelic-reiki-share.html" class="btn-book" onclick="event.stopPropagation();">View Details</a>
+        </div>
+
+        <div class="event-card" onclick="location.href='details/spiritual-fairs.html';">
+            <div class="event-date">📅 Various Dates Throughout the Year</div>
+            <h3>Cathy at Local Spiritual Fairs</h3>
+            <div class="event-location">📍 Various locations across West Yorkshire</div>
+            <p class="event-description">Cathy regularly attends spiritual fairs and events offering card readings and healing tasters. Contact for upcoming dates and locations.</p>
+            <a href="details/spiritual-fairs.html" class="btn-book" onclick="event.stopPropagation();">View Details</a>
+        </div>
+
+        <div class="event-card" onclick="location.href='details/meditation-classes.html';">
+            <div class="event-date">📅 Regular Day and Evening Sessions</div>
+            <h3>Meditation and Relaxation Classes</h3>
+            <div class="event-location">📍 Crystal Serenity Therapy Room, Shelf, Halifax</div>
+            <p class="event-description">Group meditation classes for relaxation and spiritual development. All welcome.</p>
+            <a href="details/meditation-classes.html" class="btn-book" onclick="event.stopPropagation();">View Details</a>
+        </div>
+
+        <div class="event-card" onclick="location.href='details/crystal-workshop-dates.html';">
+            <div class="event-date">📅 Contact for Upcoming Dates</div>
+            <h3>Crystal Healing Workshops</h3>
+            <div class="event-location">📍 Crystal Serenity Therapy Room, Shelf, Halifax</div>
+            <p class="event-description">Interactive workshops to learn about crystals and crystal healing. Group bookings available.</p>
+            <a href="details/crystal-workshop-dates.html" class="btn-book" onclick="event.stopPropagation();">View Details</a>
+        </div>
+    </section>
+
+    <!-- Gift Vouchers Section -->
+    <section>
+        <h2 class="section-title">Gift Vouchers</h2>
+        <div class="gift-card">
+            <h3>Give the Gift of Healing</h3>
+            <p>Perfect for birthdays, anniversaries, or special occasions.</p>
+            <p>Gift vouchers are available for:</p>
+            <div class="voucher-box">
+                <p><strong>Healing Therapies</strong> — Angelic Reiki, Crystal Therapy, Massage and more</p>
+                <p><strong>Card Readings</strong> — 30 or 60 minute sessions</p>
+                <p><strong>Workshops and Training</strong> — gift a place on any course</p>
+                <p><strong>Open Value Vouchers</strong> — let the recipient choose</p>
+            </div>
+            <a href="about.html" class="btn">Enquire About Gift Vouchers</a>
+        </div>
+    </section>
+
+    <!-- Booking Information -->
+    <section>
+        <h2 class="section-title">How to Book</h2>
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>By Phone</h3>
+                <p>Call Cathy directly on</p>
+                <div class="price">07765 065 466</div>
+                <p>For a free, no-obligation consultation</p>
+            </div>
+            <div class="price-card">
+                <h3>By Email</h3>
+                <p>Send an email to</p>
+                <div class="price" style="font-size: 1.2rem;">cathy@crystalserenity.org.uk</div>
+                <p>Include your name, preferred service, and availability</p>
+            </div>
+            <div class="price-card">
+                <h3>In Person</h3>
+                <p>Visit the therapy room</p>
+                <p>Shelf, Halifax</p>
+                <p>(Full address given upon booking)</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2013-2026 Crystal Serenity | Providing card readings since the 1970s</p>
+        <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+        <p>Concessions available for carers, pensioners, low income and regular treatments</p>
+    </div>
+</footer>
+
+</body>
+</html>
