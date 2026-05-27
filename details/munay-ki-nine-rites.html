@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Serenity | Munay-Ki Nine Rites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            color: #3a6b3a;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-style: italic;
+            color: #5a7a5a;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a5a3a;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7cb342;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #7cb342;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .detail-hero {
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
+            padding: 40px 0;
+            border-radius: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .detail-hero h1 {
+            font-size: 2rem;
+            color: #2d4a2d;
+            font-family: 'Georgia', serif;
+        }
+
+        .detail-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .detail-content h2 {
+            color: #7cb342;
+            margin: 25px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .detail-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .detail-content p {
+            margin-bottom: 15px;
+            color: #4a6a4a;
+        }
+
+        .detail-content ul {
+            margin: 15px 0 15px 30px;
+            color: #4a6a4a;
+        }
+
+        .detail-content li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background: #e8f0e0;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #7cb342;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #7cb342;
+        }
+
+        .btn-book {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-book:hover {
+            background: #558b2f;
+        }
+
+        footer {
+            background: #2d4a2d;
+            color: #e8f0e0;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            .detail-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Crystal Serenity</h1>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../therapies.html">Therapies</a></li>
+                <li><a href="../training.html">Training & Workshops</a></li>
+                <li><a href="../events.html">Events & Bookings</a></li>
+                <li><a href="../about.html">About & Contact</a></li>
+                <li><a href="../testimonials.html">Testimonials</a></li>
+                <li><a href="../terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <a href="../training.html" class="back-link">← Back to Training</a>
+
+    <div class="detail-hero">
+        <h1>Munay-Ki</h1>
+        <p>The Nine Rites of Initiation</p>
+    </div>
+
+    <div class="detail-content">
+        <h2>What is Munay-Ki?</h2>
+        <p>Munay-Ki is a powerful system of energetic rites and initiations originating from the Q'ero shamans of the Andes Mountains in Peru. "Munay" means "unconditional love" in the Quechua language, and "Ki" means "energy" or "life force". Together, Munay-Ki means "the energy of unconditional love".</p>
+        <p>These nine rites are designed to heal and transform the human energy field, preparing you to become what the shamans call "homo luminous" — a transcended light being.</p>
+        <p>Cathy is a Certified Munay-Ki Mentor, following in the tradition and accordance with the Four Winds Society.</p>
+
+        <h2>The Nine Rites Explained</h2>
+        <p>The Munay-Ki rites work on your luminous energy field (the aura), clearing, healing, and upgrading your energy centres (chakras). The nine rites are:</p>
+        <ul>
+            <li><strong>Rite 1: Healer's Rite</strong> - Activates your inner healer</li>
+            <li><strong>Rite 2: Bands of Power</strong> - Five bands of protection and empowerment</li>
+            <li><strong>Rite 3: Harmony Rite</strong> - Heals wounds and restores balance</li>
+            <li><strong>Rite 4: Seer's Rite</strong> - Opens your inner vision and intuition</li>
+            <li><strong>Rite 5: Daykeeper's Rite</strong> - Connects you with the wisdom of the shamans</li>
+            <li><strong>Rite 6: Wisdomkeeper's Rite</strong> - Anchors higher wisdom into your energy field</li>
+            <li><strong>Rite 7: Earthkeeper's Rite</strong> - Connects you with the sacred Earth energies</li>
+            <li><strong>Rite 8: Star Keeper's Rite</strong> - Connects you with the cosmic energies of the stars</li>
+            <li><strong>Rite 9: Creator Rite</strong> - The highest initiation, awakening your divine nature</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>How the Rites Are Given</h3>
+            <p>The Munay-Ki rites are received through a sacred transmission (similar to an attunement) from a certified mentor. Cathy will guide you through each rite in a supportive, sacred space. No prior experience is needed.</p>
+            <p>The rites can be given individually or as a full set. Most people choose to receive the first three rites (Healer, Bands of Power, Harmony) as a foundation, then progress to the higher rites over time.</p>
+        </div>
+
+        <h2>Benefits of Receiving Munay-Ki</h2>
+        <ul>
+            <li>Deep healing of the luminous energy field</li>
+            <li>Clearing of ancestral and past life patterns</li>
+            <li>Increased intuition and spiritual awareness</li>
+            <li>A sense of protection and grounding</li>
+            <li>Connection with the wisdom of the Andes shamans</li>
+            <li>Preparation for ascension and higher consciousness</li>
+            <li>A greater capacity for unconditional love</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>Investment</h3>
+            <p><strong>First Three Rites (Healer, Bands of Power, Harmony):</strong> £111</p>
+            <p><strong>Complete Nine Rites (all rites):</strong> £333 (payment plans available)</p>
+            <p><em>Includes a certificate of completion and ongoing support.</em></p>
+        </div>
+
+        <h2>What Our Students Say</h2>
+        <p>"I completed my Munay-Ki rites with Cathy and it was a profoundly moving experience. She honours the tradition beautifully. I feel forever changed and deeply grateful." — Rachel K.</p>
+
+        <div style="text-align: center;">
+            <a href="../events.html" class="btn-book">Enquire About Munay-Ki</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2013-2026 Crystal Serenity | Certified Munay-Ki Mentor | Four Winds Society</p>
+        <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+    </div>
+</footer>
+
+</body>
+</html>
