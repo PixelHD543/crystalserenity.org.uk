@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Serenity | Animal Healing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d4a2d;
+            background-color: #f0f7f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #dcedbc, #c8e0c8);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.6rem;
+            color: #3a6b3a;
+            font-family: 'Georgia', serif;
+        }
+
+        .logo p {
+            font-style: italic;
+            color: #5a7a5a;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3a5a3a;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7cb342;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: #7cb342;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .detail-hero {
+            background: linear-gradient(135deg, #c8e0c8, #b8d4b8);
+            padding: 40px 0;
+            border-radius: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .detail-hero h1 {
+            font-size: 2.2rem;
+            color: #2d4a2d;
+            font-family: 'Georgia', serif;
+        }
+
+        .detail-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .detail-content h2 {
+            color: #7cb342;
+            margin: 25px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .detail-content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .detail-content p {
+            margin-bottom: 15px;
+            color: #4a6a4a;
+        }
+
+        .detail-content ul {
+            margin: 15px 0 15px 30px;
+            color: #4a6a4a;
+        }
+
+        .detail-content li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background: #e8f0e0;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+            border-left: 5px solid #7cb342;
+        }
+
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #7cb342;
+        }
+
+        .btn-book {
+            display: inline-block;
+            background: #7cb342;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn-book:hover {
+            background: #558b2f;
+        }
+
+        footer {
+            background: #2d4a2d;
+            color: #e8f0e0;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                justify-content: center;
+            }
+            .detail-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Crystal Serenity</h1>
+            <p>Intuitive Complementary & Holistic Healing</p>
+            <p>Training & Workshops</p>
+            <p>Halifax, West Yorkshire</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../therapies.html">Therapies</a></li>
+                <li><a href="../training.html">Training & Workshops</a></li>
+                <li><a href="../events.html">Events & Bookings</a></li>
+                <li><a href="../about.html">About & Contact</a></li>
+                <li><a href="../testimonials.html">Testimonials</a></li>
+                <li><a href="../terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <a href="../therapies.html" class="back-link">← Back to Therapies</a>
+
+    <div class="detail-hero">
+        <h1>Animal Healing</h1>
+        <p>Healing for animals with Reiki and crystals</p>
+    </div>
+
+    <div class="detail-content">
+        <h2>About Animal Healing</h2>
+        <p>Animals are highly sensitive to energy and often respond beautifully to gentle, non-invasive healing modalities. Cathy offers healing for animals using a combination of Angelic Reiki, Crystal Healing, and distant healing techniques.</p>
+        <p>Whether your animal companion is experiencing physical discomfort, emotional distress, behavioural changes, or simply needs support, healing can help restore balance and well-being.</p>
+
+        <h2>How Animal Healing Works</h2>
+        <p>Healing energy is channelled to your animal either in person (where possible) or through distant healing. Cathy works intuitively, allowing the energy to flow where it is most needed. Animals are never forced to receive healing — they will naturally come closer or move away as they choose.</p>
+        <p>Many animals become calm, relaxed, or even fall asleep during a session. Some may yawn, stretch, or show other signs of releasing energy.</p>
+
+        <h2>Benefits of Animal Healing</h2>
+        <ul>
+            <li>Reduces stress and anxiety (e.g., from vet visits, travel, or changes in the home)</li>
+            <li>Supports recovery from illness, injury, or surgery</li>
+            <li>Helps with behavioural issues</li>
+            <li>Provides comfort for elderly or terminally ill animals</li>
+            <li>Strengthens the bond between you and your animal</li>
+            <li>Promotes overall well-being and balance</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>What to Expect</h3>
+            <p>For an in-person session, Cathy will spend time quietly with your animal, offering gentle hands-on or hands-off healing as appropriate. For distant healing, you simply need to provide a photo of your animal and agree on a time — Cathy will send healing remotely, and you can observe your animal's response.</p>
+            <p>After the session, Cathy will share any insights or messages received during the healing.</p>
+        </div>
+
+        <h2>Types of Animals Helped</h2>
+        <p>Cathy has worked with:</p>
+        <ul>
+            <li>Dogs and cats</li>
+            <li>Horses</li>
+            <li>Small pets (rabbits, guinea pigs, hamsters)</li>
+            <li>Birds</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>Session Price</h3>
+            <p class="price">£35 per session</p>
+            <p>Distant healing: £25</p>
+            <p><em>Travel expenses may apply for home visits over 8 miles from base.</em></p>
+        </div>
+
+        <h2>What Our Clients Say</h2>
+        <p>"Cathy's distant healing for my elderly dog was remarkable. Within days, he was more active and seemed much happier. She has a true connection with animals." — James B.</p>
+
+        <div style="text-align: center;">
+            <a href="../events.html" class="btn-book">Book Animal Healing</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2013-2026 Crystal Serenity | Animal Healing with Reiki and Crystals</p>
+        <p>Email: cathy@crystalserenity.org.uk | Phone: 07765 065 466</p>
+    </div>
+</footer>
+
+</body>
+</html>
